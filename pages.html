@@ -150,8 +150,8 @@ opacity: 1;
          <img src="./img/9.jpg"  class="ani resize" style="width:320px;height:480px;left:0px;top:0px;z-index:1;" swiper-animate-effect="zoomInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"  >
          
          </section>
-         <section class="swiper-slide swiper-slide11" style="background-color: #F78200;">
-		<iframe src="./9-1.html" frameborder="0"class="ani resize" style="width:280px;height:400px;left:20px;top:35px;z-index:3;border: none;" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0s" ></iframe>
+         <section class="swiper-slide swiper-slide11" style="background-color: #F78200;"onclick="window.location.href='./9-1.html'">
+		<iframe src="./9-1.html" frameborder="0"class="ani resize" style="width:280px;height:400px;left:20px;top:35px;z-index:3;border: none;overflow-x:auto;overflow-y:hidden;" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0s" onclick="window.location.href='./9-1.html'"></iframe>
            
          </section>
 		 
@@ -185,54 +185,47 @@ opacity: 1;
 		   </section>
 		 
 		 
-		 <!-------------slide14----------------->
+		 
 		  <section class="swiper-slide swiper-slide17">
-		  
-		  <img src="./img/14.jpg"  class="ani resize" style="width:320px;height:480px;left:0px;top:0px;z-index:1;" swiper-animate-effect="zoomInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"  >
-		  
-		  </section>
-		  <section class="swiper-slide swiper-slide18">
 		 		 
 		    <img src="./img/15.jpg" class="ani resize" style="width:320px;height:480px;left:0px;top:0px;z-index:3;" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0s"  > 
 		  </section>
 		 
 		 
 		 <!---------------slide16-------------->
-		        <section class="swiper-slide swiper-slide19">
+		        <section class="swiper-slide swiper-slide18">
 		        <img src="./img/16.jpg" class="ani resize" style="width:320px;height:202px;left:0px;top:20px;z-index:5; " swiper-animate-effect="bounce" swiper-animate-duration="0.5s" swiper-animate-delay="0s"  > 
 				<img src="./img/19.jpg" class="ani resize" style="width:320px;height:202px;left:0px;top:245px;z-index:5; " swiper-animate-effect="bounce" swiper-animate-duration="0.5s" swiper-animate-delay="0s"  > 
 		        </section>
-		 <section class="swiper-slide swiper-slide20" style="background-color: #fff;">
+		 <section class="swiper-slide swiper-slide20" style="background-color: #fff;" onclick="window.location.href='16-1.html'">
 		       
-			   <iframe src="16-1.html" class="ani resize" style="width:280px;height:400px;left:20px;top:35px;z-index:3;border: none;" swiper-animate-effect="bounce" swiper-animate-duration="0.5s" swiper-animate-delay="0s"></iframe>
+			
+			   <iframe src="16-1.html" frameborder="0"class="ani resize" style="width:280px;height:400px;left:20px;top:35px;z-index:3;border: none;overflow-x:auto;overflow-y:hidden;" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0s" onclick="window.location.href='16-1.html'"></iframe>
 				
 		</section>
 		 <!---------------slide16-------------->
-		        <section class="swiper-slide swiper-slide21">
+		        <section class="swiper-slide swiper-slide19">
 		        <img src="./img/17.jpg" class="ani resize" style="width:320px;height:480px;left:0px;top:0px;z-index:5; " swiper-animate-effect="bounce" swiper-animate-duration="0.5s" swiper-animate-delay="0s"  > 
 		    
 		        </section>
-				<section class="swiper-slide swiper-slide22">
+				<section class="swiper-slide swiper-slide20">
 				<img src="./img/18.jpg" class="ani resize" style="width:320px;height:480px;left:0px;top:0px;z-index:5; " swiper-animate-effect="bounce" swiper-animate-duration="0.5s" swiper-animate-delay="0s"  > 
 						    
 				</section>
 				
-				<section class="swiper-slide swiper-slide23">
+				<section class="swiper-slide swiper-slide21">
 				<img src="./img/20.jpg" class="ani resize" style="width:320px;height:480px;left:0px;top:0px;z-index:5; " swiper-animate-effect="bounce" swiper-animate-duration="0.5s" swiper-animate-delay="0s"  > 
 						    
 				</section>
-				<section class="swiper-slide swiper-slide24">
+				<section class="swiper-slide swiper-slide22">
 				
-				<img src="./img/结尾.jpg" class="ani resize" style="width:320px;height:480px;left:0px;top:0px;z-index:3;" swiper-animate-effect="zoomIn" swiper-animate-duration="1.5s" swiper-animate-delay="0s"  > 
-				       
-				
+				<img src="./img/结尾.jpg" class="ani resize" style="width:320px;height:480px;left:0px;top:0px;z-index:3;" swiper-animate-effect="zoomIn" swiper-animate-duration="1.5s" swiper-animate-delay="0s" >
 				</section>
     </div>
     
    <img src="images/arrow.png" style="width:20px;height:15px; top:460px; left:150px;" id="array" class="resize"> 
   <div class="swiper-pagination"></div>  
 </div>
-
 
 <script>  
 
@@ -278,17 +271,12 @@ var resizes = document.querySelectorAll('.resize');
 
         }
       },
-	
 	   onSetTransition: function(swiper, speed) {
         for (var i = 0; i < swiper.slides.length; i++){
           es = swiper.slides[i].style;
 		  es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
-
         }
       },
-	
-	
-	
 	   })         
   </script>
 </body>
