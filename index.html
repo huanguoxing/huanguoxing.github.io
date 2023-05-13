@@ -16,22 +16,11 @@
             <div class="an">
                 <input name="userName" type="text" id="input"  value=""  onkeydown="var e=window.event || arguments[0];if(e.keyCode==13){ check() }" placeholder="请输入卡密">
                <!-- <input  name="pwd" type="password" id="input1" type="text" value=""  onkeydown="var e=window.event || arguments[0];if(e.keyCode==13){ check() }"> -->
-                <button onclick="check()" id="login-button">登录-验证</button>
+                <button onclick="check()" id="login-button" style="color: #000;">登录-验证</button>
             </div>
         </div>
 
-        <ul class="bg-bubbles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+       
     </div>
 </div>
 
@@ -40,17 +29,15 @@
 <script src='js/happy.js'></script>
 <script>
 	var btn = document.getElementsByClassName('layui-btn-sm')[0];
-				var url = 'pages.html';
-				check = function () {
-				            if (input.value == 'YA95E3JE' ){
-				                window.location = url;
-				            }
-							if (input.value == 'I3FSP93W' ){
-							    window.location = url;
-							}
-							
-							
-				        };
+	var url = 'pages.html';
+	check = function () {
+				if (input.value == 'YA95E3JE'){
+					window.location = url;
+				}
+				if (input.value == 'I3FSP93W'){
+					window.location = url;
+				}
+			};
 </script>
 </body>
 </html>
